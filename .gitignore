@@ -1,0 +1,23 @@
+# Visual Studio and Visual Studio Code
+bin/
+obj/
+*.suo
+*.csproj.user
+.vs/
+*.pubxml.user
+
+#Temporary Word doc files
+/doc/~$*
+
+# ASP.NET ELMAH Logs
+/src/Server/logs
+
+# Nuget
+/packages/*
+!repositories.config
+
+# Node.js
+/node_modules/
+
+# IDE files
+/.idea/
