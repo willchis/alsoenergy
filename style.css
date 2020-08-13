@@ -1,3 +1,81 @@
 body {
     background: #3F3939;
+    font-family: sans-serif;
+    color: white;
+    margin: 0;
+    margin-bottom: 80px; /*To account for fixed footer*/
+}
+
+a {
+    color: #fff;
+}
+
+    a:hover {
+        color: #C3BA8A;
+    }
+
+nav {
+    min-height: 50px;
+    background-color: #AA3929;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+    nav .nav-item {
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+     @media (max-width: 340px) {
+        nav .nav-item {
+            width: 100%;
+            text-align: center;
+            margin-top: 10px;
+        }
+    }
+
+    nav img {
+        height: 30px;
+        padding: 10px;
+    }
+
+main {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+    @media (max-width: 600px) {
+        main {
+            display: block;
+        }
+    }
+
+.content {
+    flex: 80%;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.menu {
+    flex: 20%;
+}
+
+    .menu ul {
+        padding-inline-start: 0;
+        padding-left: 30px;
+        list-style: none;
+    }
+
+    .menu li {
+        padding-bottom: 5px;
+    }
+
+
+footer {
+    height: 40px;
+    padding: 10px 30px 10px 30px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    background-color: #C1B379;
 }
